@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações de contato</title>
+</head>
+<body>
+    <h3>Informações para contato:</h3>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" size="50" id="nome" name="nome"><br>
+        <label for="email">E-mail:</label><br>
+        <input type="text" size="50" id="email" name="email">
+    </form>
+    <h4>Linguagens abordadas:</h4>
+    <form>
+        <input type="checkbox" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+    <h4>Gênero:</h4>
+    <form>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino"> Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino"> Ferminino</label><br>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro"> Prefiro nâo informar</label>
+    </form>
+    <p>Você concorda com os termos de confidencialidade das informações prestadas?</p>
+    <form>
+        <input type="checkbox" id="termos" name="termos" value="sim">
+        <label for="termos"> Sim, eu concordo.</label>
+        <input type="checkbox" id="termos" name="termos" value="não">
+        <label for="termos"> Não, eu não concordo.</label>
+    </form>
+    <p>Descreva a razão do seu contato:</p>
+    <form>
+        <textarea id="contato" name="contato" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
