@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações de contato</title>
+</head>
+<body>
+    <h3>Informações para contato:</h3>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" size="50" id="nome" name="nome" required><br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" size="50" id="email" name="email" required><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" size="50" id="telefone" name="telefone" required>
+
+        <!-- TRANSFORMAR ISSO AQUI EM SELECT -->
+        <p>Assunto:</p>
+        <select name="contato" required>
+            <option value="">Selecione uma opção</option>
+            <option value="vaga">Vaga de emprego</option>
+            <option value="duvida">Dúvida</option>
+            <option value="outros">Outros</option>
+        </select>
+        
+        <p>Gênero:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino"> Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino"> Ferminino</label><br>
+        <input type="radio" id="outro" name="genero" value="outro" checked="checked">
+        <label for="outro"> Prefiro não informar</label>
+        
+        <p>Você concorda com os termos de confidencialidade das informações prestadas?</p>
+        <input type="checkbox" name="sim" value="sim" required>
+        <label for="termos"> Sim, eu concordo.</label>
+        
+        <p>Descreva a razão do seu contato:</p>
+        <textarea id="contato" name="contato" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Enviar">
+    
+    </form>
+</body>
+</html>
